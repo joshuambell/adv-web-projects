@@ -2,9 +2,36 @@
 <html>
   <head>
      <title>Impressionism Studies</title> 
-    
       <style>
-      body {background-color: #000000;}
+     body {background-color: #000000;}
+     .navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
      .center {
       text-align: center;
         }
@@ -19,10 +46,16 @@
         font-size: 14px;
         color: #ffffff;
         }
-    </style>
+      </style>
   </head>
-  <div class="center">
-        <h1>Studies of Impressionism </h1>
+  <body>
+      <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="about.html">About me</a>
+          <a href="projects.html">Projects</a>
+        </div>
+        <div class="main"></div>
   <p>Inspired by Monet. I'm creating this website to document my studies of Impressionism.</p>
+      </div>
   </body>
 </html>
